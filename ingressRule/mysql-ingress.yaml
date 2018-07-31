@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: mysql-ingress
+  namespace: mysql
+spec:
+  rules:
+  - host: mysql.k8s.ingress
+    http:
+      paths:
+      - backend:
+          serviceName: mysql-master
+          servicePort: 3306
+
