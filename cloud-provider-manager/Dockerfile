@@ -1,2 +1,2 @@
-FROM gcr.io/google-containers/cloud-controller-manager-amd64:v1.11.0
+FROM gcr.io/google-containers/metrics-server-amd64:v0.3.1
 MAINTAINER kzh
